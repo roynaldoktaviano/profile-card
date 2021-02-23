@@ -1,0 +1,151 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  width: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-color: #19a2ae;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+}
+
+body .img-top {
+  width: 56.25rem;
+  position: absolute;
+  top: -50%;
+  left: 0;
+}
+
+body .img-bot {
+  width: 56.25rem;
+  position: absolute;
+  bottom: -50%;
+  right: 0;
+}
+
+body .card-profile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 21.875rem;
+  height: 25rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 99;
+}
+
+body .card-profile .profile-photo {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+body .card-profile .user-info {
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  -webkit-transform: translate(-50%, -65%);
+          transform: translate(-50%, -65%);
+  display: block;
+}
+
+body .card-profile .user-info .user-name {
+  display: inline;
+}
+
+body .card-profile .user-info .user-age {
+  display: inline;
+  margin-left: 10px;
+  font-size: 19px;
+  color: #969696;
+}
+
+body .card-profile .user-info .user-place {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 15px;
+  color: #969696;
+}
+
+body .card-profile .user-exposure {
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .card-profile .user-exposure .user-follower {
+  display: inline-block;
+  text-align: center;
+  line-height: 8px;
+  margin: 0 30px;
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+
+body .card-profile .user-exposure .user-follower .explain {
+  font-size: 11px;
+  font-stretch: expanded;
+  width: auto;
+  color: #969696;
+  letter-spacing: 2px;
+}
+
+body .card-profile .user-exposure .user-likes {
+  display: inline-block;
+  text-align: center;
+  line-height: 8px;
+  margin: 0 30px;
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+
+body .card-profile .user-exposure .user-likes .explain {
+  font-size: 11px;
+  font-stretch: expanded;
+  width: auto;
+  color: #969696;
+  letter-spacing: 2px;
+}
+
+body .card-profile .user-exposure .user-photo {
+  display: inline-block;
+  text-align: center;
+  line-height: 10px;
+  margin: 0 30px;
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+
+body .card-profile .user-exposure .user-photo .explain {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-stretch: expanded;
+  width: auto;
+  color: #969696;
+}
+
+hr {
+  margin-top: 160px;
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,142 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+body {
+    width: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;  
+    background: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-color: $cyan;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+
+    .img-top{
+        width: 56.25rem;
+        position: absolute;
+        top: -50%;
+        left: 0;
+    }
+
+    .img-bot{
+        width: 56.25rem;
+        position: absolute;
+        bottom: -50%;
+        right: 0;
+    }
+
+    .card-profile {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 21.875rem;
+        height: 25rem;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        z-index: 99;
+
+        .profile-photo {
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%,-25%);
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+        .user-info{
+            position: absolute;
+            left: 50%;
+            bottom: 35%;
+            transform: translate(-50%,-65%);
+            display: block;
+
+            .user-name {
+                display: inline;
+            }
+
+            .user-age{
+                display: inline;
+                margin-left: 10px;
+                font-size: 19px;
+                color: $dark-gray;
+            }
+
+            .user-place {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 15px;
+                color: $dark-gray;
+            }
+        }
+
+        .user-exposure {
+            margin: 0 auto;
+            // padding: 10px;
+            justify-content: center;
+            .user-follower {
+                display: inline-block;
+                text-align: center;
+                line-height: 8px ;
+                margin: 0 30px;
+                padding-bottom: 20px;
+                font-size: 13px;
+                .explain {
+                    font-size: 11px;
+                    font-stretch: expanded;
+                    width: auto;
+                    color: $dark-gray;
+                    letter-spacing: 2px;
+                }
+                
+            }
+            .user-likes {
+                display: inline-block;
+                text-align: center;
+                line-height: 8px;
+                margin: 0 30px;
+                padding-bottom: 20px;
+                font-size: 13px;
+                .explain {
+                    font-size: 11px;
+                    font-stretch: expanded;
+                    width: auto;
+                    color: $dark-gray;
+                    letter-spacing: 2px;
+                }
+                
+            }
+            .user-photo {
+                display: inline-block;
+                text-align: center;
+                line-height: 10px;
+                margin: 0 30px;
+                padding-bottom: 20px;
+                font-size: 13px;
+                .explain {
+                    font-size: 11px;
+                    letter-spacing: 2px;
+                    font-stretch: expanded;
+                    width: auto;
+                    color: $dark-gray;
+                }
+                
+            }
+        }
+    }
+
+}
+
+hr {
+    margin-top: 160px;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
